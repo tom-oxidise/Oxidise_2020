@@ -304,10 +304,10 @@ span {
 .roundbutton4 {
   position: fixed;
   z-index: 11;
-  display: none;
   left: 65%;
   top: 60%;
   height: 147px;
+  display: none;
   opacity: 0;
 }
 
@@ -333,54 +333,6 @@ span {
 }
 
 .roundbutton4.active {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
-  display: block;
-}
-
-.mob-button1 {
-  display: none;
-  opacity: 0;
-}
-
-.mob-button2 {
-  display: none;
-  opacity: 0;
-}
-
-.mob-button3 {
-  display: none;
-  opacity: 0;
-}
-
-.mob-button4 {
-  display: none;
-  opacity: 0;
-}
-
-.mob-button1.active {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
-  display: block;
-}
-
-.mob-button2.active {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
-  display: block;
-}
-
-.mob-button3.active {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
-  display: block;
-}
-
-.mob-button4.active {
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   opacity: 1;
@@ -1283,41 +1235,8 @@ nav span #burger:hover {
   text-align: end;
 }
 
-.togglesMob {
-  display: none;
-  position: absolute;
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  bottom: 2rem;
-  width: 120px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0;
-}
-
-.togglesMob.active {
-  -webkit-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-}
-
-#togglealignMob {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+#mcm {
+  width: 100%;
 }
 
 #missionMobile {
@@ -1447,9 +1366,6 @@ nav span #burger:hover {
   }
   #aboutCTA {
     display: none;
-  }
-  #missionCTAMobile {
-    display: block;
   }
 }
 

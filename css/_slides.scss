@@ -232,30 +232,8 @@
     text-align: end;
 }
 
-.togglesMob {
-    display: none;
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    bottom: 2rem;
-    width: 120px;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0;
-}
-
-.togglesMob.active {
-    transition: opacity 1s ease-in-out;
-}
-
-#togglealignMob {
-    display: flex;
-    flex-direction: row;
-}
-
-#mobileCTA {
-    
+#mcm {
+    width: 100%;
 }
 
 #missionMobile {
@@ -353,9 +331,6 @@
     }
     #aboutCTA{
         display: none;
-    }
-    #missionCTAMobile {
-        display: block;
     }
     }
 
