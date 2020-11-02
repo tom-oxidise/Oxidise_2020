@@ -1,0 +1,266 @@
+.overlay {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, #820AB7 3.28%, #203BD4 50.63%, #059CCB 100%);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.3s;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .overlay-content {
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .overlay-content-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 150px;
+    padding-top: 190px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    a {
+      font-size: 2rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .overlay-content-left {
+      padding-left: 25px;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menuone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 64px;
+  }
+  #menuone:after {    
+        background: none repeat scroll 0 0 transparent;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 100%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+  #menuone:hover:after { 
+        width: 50%; 
+        left: 0; 
+      }
+  #menutwo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  #menutwo:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 100%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #menutwo:hover:after { 
+    width: 50%; 
+    left: 0; 
+  }
+  #menuthree {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  #menuthree:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 100%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #menuthree:hover:after { 
+    width: 50%; 
+    left: 0; 
+  }
+  #menufour {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #menufour:after {    
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 100%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #menufour:hover:after { 
+    width: 50%; 
+    left: 0; 
+  }
+  
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 2px;
+    right: 165px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 30px;
+    right: 30px;
+    }
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  .terms-container {
+    width: 100%;
+    height: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .terms {
+      font-size: 0.75rem;
+      width: 86%;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .terms-text {
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .terms-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 10px;
+  }
+
+  .overlay-content-right {
+    padding-top: 289px;
+    padding-bottom: 287px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #linkedin {
+      font-size: 1rem;
+      border-bottom: 1px solid currentColor;
+      padding-top: 30px;
+  }
+  #linkedin:hover {
+    font-size: 1rem;
+    border-bottom: 0px solid currentColor;
+}
+
+  #closeround {
+    animation: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    transform-origin: center;
+    transform-box: center;
+}
+
+@keyframes rotate{
+  from {
+      transform: rotatez(0deg);
+    }
+    to {
+      transform: rotatez(360deg);
+    }
+}
+
+  .closebtn:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .overlay-content-right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: flex-start;
+    padding-top: 50px;
+    width: 100%;
+    }
+  .terms h2 {
+    font-size: 0.35rem;
+  }
+  ul {
+    font-size: 0.35em;
+  }
+  .terms-text {
+    font-size: 0.5rem;
+  }
+}

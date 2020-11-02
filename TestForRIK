@@ -1,0 +1,67 @@
+
+            This is the first green box in the pdf.
+            
+            $mpdf->SetTextColor( 255, 255, 255 ); - White text colour
+            $mpdf->SetX( 0 ); start from left
+            $mpdf->SetY(41); start 41px down
+            $mpdf->SetFont('overpass', 'R', 13); set font to Overpass, regular, 13pt
+            $mpdf->WriteCell(0, 0, 'Operation Statistics', 0, 0, 'A'); Add text Operation Statistics
+            $mpdf->SetX( 0);
+            $mpdf->SetY(41);
+            $mpdf->SetFont('overpass', 'R', 13);
+            $mpdf->WriteCell(0, 0, $inputsSaved['i_hospital_name'], 0, 0, 'C', );
+            
+            // $mpdf->WriteCell(0, 0, $inputsSaved['i_hospital_name'], 0, 0, 'A');
+
+            $mpdf->SetX( 210 / 2);
+            $mpdf->SetY(49);
+            $mpdf->SetFont('overpass', 'R', 10);
+            $mpdf->WriteCell(0, 0, 'Days of operation: ' .  $inputsSaved['i_number_days_operation_per_year'] . " days", 0, 0, 'A');
+            $mpdf->SetX( 210 / 2);
+            $mpdf->SetY(50);
+            $mpdf->SetFont('overpass', 'R', 12);
+            $mpdf->WriteCell(0, 0, 'Date: ' . date('d.m.Y'), 0, 0, 'C');
+            
+         
+            $mpdf->SetX( 210 / 2);
+            $mpdf->SetY(55);
+            $mpdf->SetFont('overpass', 'R', 10);
+            $mpdf->WriteCell(0, 0, 'Hours  per day: ' . $inputsSaved['i_daily_hours_operation'] . " hours", 0, 0, 'A');
+            $mpdf->SetX( 210 / 2);
+            $mpdf->SetY(61);
+            $mpdf->SetFont('overpass', 'R', 10);
+            $mpdf->WriteCell(0, 0, 'Annual test volume: ' . $inputsSaved['i_number_tests_every_year'], 0, 0, 'A');
+            $mpdf->SetX( 210 / 2);
+            $mpdf->SetY(58);
+            $mpdf->SetFont('overpass', 'R', 12);
+            $mpdf->WriteCell(0, 0, 'Link: ' . $inputsSaved['id'], 0, 0, 'C', false, 'http://'.$_SERVER['SERVER_NAME'].'/access/'.$inputsSaved['id']);
+     
+            
+          $mpdf->SetDrawColor( 255, 255, 255 );
+          $mpdf->Rect(15, 45, 45, 0, 'A' );
+          $mpdf->SetDrawColor( 255, 255, 255 );
+          $mpdf->Rect(105 - 15, 45, 30, 0, 'D' );
+
+      for( $posy = 70 ; $posy < 260 ; $posy = $posy + $boxHeight   ) {   
+        for( $posx = 13 ;  $posx < 170 ; $posx = $posx + 95 ) { 
+        $interSpaceHeight = 5;  
+          if ( $boxCount < 4 ) {
+            if ( $boxCount % 2 == 1 ) {
+              $boxCount++;
+              continue;
+            }
+            $doubleBox = true;
+            $boxWidth = 90 + 90 + 5;
+            if ( $boxCount == 0 ) {
+              $boxHeight = 60;
+              $interSpaceHeight = 5;
+            } else if ( $boxCount == 2 ) {
+              $boxHeight = 50;
+            }
+            
+          } else {
+            $doubleBox = false;
+            $boxWidth = 90;
+            $boxHeight = 45;
+          }
+          

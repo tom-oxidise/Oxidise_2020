@@ -1,0 +1,352 @@
+html {
+    font-size: 100%
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    width:100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, #820AB7 3.28%, #203BD4 50.63%, #059CCB 100%);
+}
+body {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'minim_joe', sans-serif;
+}
+
+h1 {
+    font-size: 4.75rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.05em;
+}
+h2 {
+    font-size: 0.875rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+h5 {
+    font-size: 2rem;
+    font-family: 'minim_joe';
+    margin-right: 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    font-size: 0.75rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    padding-left: 10px;
+
+}
+p {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    line-height: 1.3em;
+}
+a {
+    font-size: 4.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span {
+    font-weight: 900;
+}
+
+.button {
+    width: 280px;
+    height: 56px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+}
+.button:before {
+    content:"→";
+    text-align: center;
+    margin: auto;
+    position:absolute;
+    color:#ffffff;
+    left: 10000px;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+}
+.button:hover:before{
+    left:91%;
+    opacity:1;
+  }
+  
+.button:hover {
+    border: 0px;
+    transform: scale(1.04,1.04);
+    -webkit-transform: scale(1.04,1.04);
+    transition: border 0.3s ease-out;
+    transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -webkit-transition: border 0.3s ease-out;
+    -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+
+  .button-purple {
+    width: 280px;
+    height: 56px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #820AB7;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+    background: none;
+    z-index: 100;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+}
+.button-purple:before {
+    content:"→";
+    text-align: center;
+    margin: auto;
+    position:absolute;
+    color: #820AB7;
+    left: 10000px;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+}
+.button-purple:hover:before{
+    left:91%;
+    opacity:1;
+  }
+  
+.button-purple:hover {
+    border: 0px;
+    transform: scale(1.04,1.04);
+    -webkit-transform: scale(1.04,1.04);
+    transition: border 0.3s ease-out;
+    transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -webkit-transition: border 0.3s ease-out;
+    -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+
+.roundbutton1 {
+    position: fixed;
+    z-index: 11;
+    display: none;
+    left: 60%;
+    top: 50%;
+    height: 147px;
+    opacity: 0;
+}
+.roundbutton2 {
+    position: fixed;
+    z-index: 11;
+    display: none;
+    left: 50%;
+    top: 70%;
+    height: 147px;
+    opacity: 0;
+}
+.roundbutton3 {
+    position: fixed;
+    z-index: 11;
+    display: none;
+    left: 60%;
+    top: 40%;
+    height: 147px;
+    opacity: 0;
+}
+.roundbutton4 {
+    position: fixed;
+    z-index: 11;
+    display: none;
+    left: 65%;
+    top: 60%;
+    height: 147px;
+    opacity: 0;
+}
+
+.roundbutton1.active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.roundbutton2.active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.roundbutton3.active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.roundbutton4.active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.round-button-circle {
+    height: 147px;
+    width: 147px;
+    border-radius: 50%;
+    display: block;
+    border:1px solid #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    align-self: auto;
+}
+
+.round-button-circle .active {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    background: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    align-self: auto;
+    animation: pulse 2s infinite;
+}
+
+.round-button-circle:hover {
+    animation: pulse 2s infinite;
+}
+
+.roundbutton1 a {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display:block;
+    float:left;
+    width:100%;
+    padding-top:50%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em; 
+    text-align:center;
+}
+
+.roundbutton2 a {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display:block;
+    float:left;
+    width:100%;
+    padding-top:50%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em; 
+    text-align:center;
+}
+
+.roundbutton3 a {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display:block;
+    float:left;
+    width:100%;
+    padding-top:50%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em; 
+    text-align:center;
+}
+
+.roundbutton4 a {
+    font-size: 0.875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display:block;
+    float:left;
+    width:100%;
+    padding-top:50%;
+    padding-bottom:50%;
+    line-height:1em;
+    margin-top:-0.5em; 
+    text-align:center;
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+  @import 'nav';
+  @import 'navoverlay';
+  @import 'slides';
+  @import 'heroslide';
+  @import 'mission';
+  @import 'chalsol';
+  @import 'contact';

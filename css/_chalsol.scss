@@ -1,0 +1,76 @@
+.chal {
+    background: #ffffff;
+    color: #820AB7;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.sol {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, #820AB7 3.28%, #203BD4 50.63%, #059CCB 100%);
+    color: #ffffff;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.chalsolheader {
+    width: 100%;
+    padding-top: 248px;
+    text-align: center;
+}
+
+#challenges {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 85px;
+    width: 100%;
+
+}
+
+.card {
+    flex-direction: column;
+    width: 340px;
+    height: 100%;
+    margin: 40px;
+}
+
+.card h4 {
+    padding-bottom: 52px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card ul {
+    flex-direction: column;
+}
+
+.card li {
+    text-decoration: none;
+    list-style: none;
+    flex-direction: column;
+    margin: 5px;
+    bottom: 0;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    line-height: 1.3em;
+}
+
+.chalsolcta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 45px;
+    width: 100%;
+}
+
+#chalsolctatext {
+    color: #820AB7;
+}

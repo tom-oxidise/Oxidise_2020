@@ -1,0 +1,41 @@
+.mission-left {
+    position: relative;
+    display: flex;
+    width: 50%;
+    background: #ffffff;
+}
+
+.mission-left a {
+    color: #820AB7
+}
+
+.mission-right {
+    position: relative;
+    display: flex;
+    width: 50%;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(90deg, #820AB7 3.28%, #203BD4 50.63%, #059CCB 100%);
+}
+
+.blurb {
+    color: #820AB7;
+    flex-direction: column;
+    width: 85%;
+    align-self: flex-start;
+    padding-top: 159px;
+    padding-left: 185px;
+}
+
+.blurb h2 {
+    margin-bottom: 53px;
+}
+
+.blurb p {
+    margin-bottom: 53px;
+}
+
+.quote {
+    padding-top: 159px;
+    padding-left: 105px;
+    width: 80%;
+
+}
