@@ -1,4 +1,7 @@
-
+    $('#missionCTAMobile').click(function() {
+         $('#missionCTAMobile').addClass('active');
+    });
+    
     //Mission Toggle//
     
     $('#2').click(function() {
@@ -151,4 +154,29 @@
     });
     $('#5').click(function() {
         $('#aboutCTA').addClass('active');
+    });
+    
+    $('#mob2').click(function() {
+        $('#slide3').addClass('active');
+    });
+    $('#mob2').click(function() {
+        $('#slide2').removeClass('active');
+    });
+    $('#mob3').click(function() {
+        $('#slide4').addClass('active');
+    });
+    $('#mob3').click(function() {
+        $('#slide3').removeClass('active');
+    });
+    $('#mob4').click(function() {
+        $('#slide5').addClass('active');
+    });
+    $('#mob4').click(function() {
+        $('#slide4').removeClass('active');
+    });
+    $('#mob5').click(function() {
+        $('#slide2').addClass('active');
+    });
+    $('#mob5').click(function() {
+        $('#slide5').removeClass('active');
     });

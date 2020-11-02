@@ -87,3 +87,15 @@
     -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
   }
 
+  @media screen and (max-width:   820px) {
+    #contact-us-left {
+        padding-left: 25px;
+        padding-top: 179px;
+        padding-right: 25px;
+    }
+    #contact-us-left p {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+  }
+

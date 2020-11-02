@@ -1,8 +1,24 @@
+.missiondesk {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-content {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
 .mission-left {
     position: relative;
     display: flex;
-    width: 50%;
     background: #ffffff;
+    width: 50%;
 }
 
 .mission-left a {
@@ -37,5 +53,65 @@
     padding-top: 159px;
     padding-left: 105px;
     width: 80%;
+    color: #ffffff;
+}
+.quote .button {
+    display: none;
+}
 
+
+@media screen and (max-width:   1300px) {
+    .quote h3 {
+        font-size: 3rem;
+    }
+    .blurb {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:   1050px) {
+    .quote h3 {
+        font-size: 2rem;
+    }
+    .quote {
+        padding-left: 50px;
+    }
+    .blurb {
+        padding-left: 50px;
+    }
+    .blurb p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:   700px) {
+    .missiondesk {
+        height: 1200px;
+        position: absolute;
+        overflow: hidden;
+        width: 100vw;
+    }
+    .mission-content {
+        flex-direction: column;
+        height: 1200px;
+    }
+    .mission-left {
+        width: 100%;
+    }
+    .mission-right {
+        width: 100%;
+        height: 100%;
+    }
+    .button-purple {
+        display: none;
+    }
+    .quote {
+        padding-top: 80px;
+    }
+    .quote h3 {
+        padding-bottom: 25px;
+    }
+    .quote .button {
+        display: block;
+    }
 }

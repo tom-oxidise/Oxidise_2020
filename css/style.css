@@ -214,6 +214,63 @@ span {
   -webkit-transition: transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+.button-purple-mob {
+  width: 280px;
+  height: 56px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #820AB7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  overflow: hidden;
+  background: none;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transition: 0.08s ease-in;
+  transition: 0.08s ease-in;
+}
+
+.button-purple-mob:before {
+  content: "→";
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  color: #820AB7;
+  left: 10000px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+}
+
+.button-purple-mob:hover:before {
+  left: 91%;
+  opacity: 1;
+}
+
+.button-purple-mob:hover {
+  border: 0px;
+  transform: scale(1.04, 1.04);
+  -webkit-transform: scale(1.04, 1.04);
+  transition: border 0.3s ease-out;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: border 0.3s ease-out;
+  -webkit-transition: transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
 .roundbutton1 {
   position: fixed;
   z-index: 11;
@@ -276,6 +333,54 @@ span {
 }
 
 .roundbutton4.active {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  display: block;
+}
+
+.mob-button1 {
+  display: none;
+  opacity: 0;
+}
+
+.mob-button2 {
+  display: none;
+  opacity: 0;
+}
+
+.mob-button3 {
+  display: none;
+  opacity: 0;
+}
+
+.mob-button4 {
+  display: none;
+  opacity: 0;
+}
+
+.mob-button1.active {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  display: block;
+}
+
+.mob-button2.active {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  display: block;
+}
+
+.mob-button3.active {
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  display: block;
+}
+
+.mob-button4.active {
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   opacity: 1;
@@ -439,6 +544,16 @@ nav span #burger:hover {
           transform: rotate(180deg);
   -webkit-transition: all 0.9s ease-in-out 0s;
   transition: all 0.9s ease-in-out 0s;
+}
+
+#burger_mob {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  #burger_mob {
+    display: block;
+  }
 }
 
 .overlay {
@@ -1207,6 +1322,117 @@ nav span #burger:hover {
 
 #missionMobile {
   display: none;
+  cursor: pointer;
+  position: fixed;
+  padding-left: 185px;
+  bottom: 15%;
+}
+
+#missionMobile.active {
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  padding-left: 185px;
+  bottom: 15%;
+}
+
+.scrollMob {
+  position: fixed;
+  width: 100%;
+  top: 90%;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.scrollMob h2 {
+  padding-top: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#mob2 {
+  cursor: pointer;
+  -webkit-animation: fadeInOut;
+          animation: fadeInOut;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  padding-top: 12px;
+  z-index: 1000;
+}
+
+#mob3 {
+  cursor: pointer;
+  -webkit-animation: fadeInOut;
+          animation: fadeInOut;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  padding-top: 12px;
+  z-index: 1000;
+}
+
+#mob4 {
+  cursor: pointer;
+  -webkit-animation: fadeInOut;
+          animation: fadeInOut;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  padding-top: 12px;
+  z-index: 1000;
+}
+
+#mob5 {
+  cursor: pointer;
+  -webkit-animation: fadeInOut;
+          animation: fadeInOut;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  padding-top: 12px;
+  z-index: 1000;
+}
+
+@-webkit-keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1222,12 +1448,8 @@ nav span #burger:hover {
   #aboutCTA {
     display: none;
   }
-}
-
-@media screen and (max-width: 1200px) {
-  #missionMobile {
+  #missionCTAMobile {
     display: block;
-    padding-top: 30px;
   }
 }
 
@@ -1267,6 +1489,14 @@ nav span #burger:hover {
   }
   .togglesMob {
     opacity: 0;
+  }
+  .scrollMob {
+    display: block;
+  }
+  #missionMobile.active {
+    display: block;
+    padding-left: 25px;
+    cursor: pointer;
   }
 }
 
@@ -1326,6 +1556,10 @@ nav span #burger:hover {
       align-content: center;
 }
 
+.scroll h2 {
+  padding-top: 10px;
+}
+
 #scroll2 {
   padding-bottom: 12px;
 }
@@ -1342,15 +1576,6 @@ nav span #burger:hover {
           animation-timing-function: linear;
   padding-top: 12px;
   z-index: 1000;
-}
-
-@-webkit-keyframes fadeInOut {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeInOut {
@@ -1564,13 +1789,33 @@ nav span #burger:hover {
   }
 }
 
+.missiondesk {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-content {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .mission-left {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
   background: #ffffff;
+  width: 50%;
 }
 
 .mission-left a {
@@ -1612,6 +1857,70 @@ nav span #burger:hover {
   padding-top: 159px;
   padding-left: 105px;
   width: 80%;
+  color: #ffffff;
+}
+
+.quote .button {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .quote h3 {
+    font-size: 3rem;
+  }
+  .blurb {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .quote h3 {
+    font-size: 2rem;
+  }
+  .quote {
+    padding-left: 50px;
+  }
+  .blurb {
+    padding-left: 50px;
+  }
+  .blurb p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .missiondesk {
+    height: 1200px;
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+  }
+  .mission-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1200px;
+  }
+  .mission-left {
+    width: 100%;
+  }
+  .mission-right {
+    width: 100%;
+    height: 100%;
+  }
+  .button-purple {
+    display: none;
+  }
+  .quote {
+    padding-top: 80px;
+  }
+  .quote h3 {
+    padding-bottom: 25px;
+  }
+  .quote .button {
+    display: block;
+  }
 }
 
 .chal {
@@ -1647,6 +1956,8 @@ nav span #burger:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1715,6 +2026,29 @@ nav span #burger:hover {
 
 #chalsolctatext {
   color: #820AB7;
+}
+
+@media screen and (max-width: 700px) {
+  .sol {
+    overflow: scroll;
+    height: 100%;
+  }
+  .chal {
+    overflow: scroll;
+    height: 100%;
+  }
+  .chalsolheader {
+    padding-top: 159px;
+  }
+  #challenges {
+    padding-top: 48px;
+  }
+  .card {
+    margin: 20px;
+  }
+  .chalsolcta {
+    padding-bottom: 20px;
+  }
 }
 
 .contact-form {
@@ -1836,5 +2170,67 @@ nav span #burger:hover {
   transition: transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transition: border 0.3s ease-out;
   -webkit-transition: transform 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@media screen and (max-width: 820px) {
+  #contact-us-left {
+    padding-left: 25px;
+    padding-top: 179px;
+    padding-right: 25px;
+  }
+  #contact-us-left p {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.privacy {
+  background: #ffffff;
+  color: #820AB7;
+  position: absolute;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#terms {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  overflow: scroll;
+}
+
+.para {
+  margin: 10px;
+}
+
+.para h4 {
+  margin-bottom: 25px;
+  text-align: start;
+  padding-top: 25px;
+}
+
+.para p {
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+@media screen and (max-width: 800px) {
+  #terms {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+  }
+  .para p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

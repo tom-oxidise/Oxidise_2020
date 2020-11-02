@@ -1,0 +1,42 @@
+.privacy {
+    background: #ffffff;
+    color: #820AB7;
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#terms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    overflow: scroll;
+}
+
+.para {
+    margin: 10px;
+}
+
+.para h4 {
+    margin-bottom: 25px;
+    text-align: start;
+    padding-top: 25px;
+}
+.para p {
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+@media screen and (max-width:   800px) {
+    #terms {
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25px;
+    }
+    .para p {
+        font-size: 1rem;
+    }
+}

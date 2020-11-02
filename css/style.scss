@@ -102,6 +102,7 @@ span {
     cursor: pointer;
     transition: 0.08s ease-in;
 }
+
 .button:before {
     content:"→";
     text-align: center;
@@ -172,6 +173,50 @@ span {
     -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
   }
 
+  .button-purple-mob {
+    width: 280px;
+    height: 56px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #820AB7;
+    box-sizing: border-box;
+    font-size: 0.875rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    overflow: hidden;
+    background: none;
+    z-index: 100;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+}
+.button-purple-mob:before {
+    content:"→";
+    text-align: center;
+    margin: auto;
+    position:absolute;
+    color: #820AB7;
+    left: 10000px;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+}
+.button-purple-mob:hover:before{
+    left:91%;
+    opacity:1;
+  }
+  
+.button-purple-mob:hover {
+    border: 0px;
+    transform: scale(1.04,1.04);
+    -webkit-transform: scale(1.04,1.04);
+    transition: border 0.3s ease-out;
+    transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    -webkit-transition: border 0.3s ease-out;
+    -webkit-transition: transform 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  }
+
 .roundbutton1 {
     position: fixed;
     z-index: 11;
@@ -228,6 +273,47 @@ span {
 }
 
 .roundbutton4.active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.mob-button1 {
+    display: none;
+    opacity: 0;
+}
+.mob-button2 {
+    display: none;
+    opacity: 0;
+}
+.mob-button3 {
+    display: none;
+    opacity: 0;
+}
+.mob-button4 {
+    display: none;
+    opacity: 0;
+}
+
+.mob-button1.active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.mob-button2.active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.mob-button3.active {
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    display: block;
+}
+
+.mob-button4.active {
     transition: opacity 1s ease-in-out;
     opacity: 1;
     display: block;
@@ -350,3 +436,4 @@ span {
   @import 'mission';
   @import 'chalsol';
   @import 'contact';
+  @import 'terms';
