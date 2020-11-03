@@ -546,9 +546,9 @@ nav span #burger:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 150px;
   padding-top: 190px;
 }
@@ -897,14 +897,20 @@ nav span #burger:hover {
   }
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
-  }
+@media screen and (max-width: 450px) {
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+  .overlay-content-left {
+    padding-top: 125px;
+  }
+  .button a {
+    font-size: 0.5rem;
+  }
+  .terms a {
+    font-size: 0.5rem;
   }
 }
 
@@ -1415,6 +1421,15 @@ nav span #burger:hover {
     display: block;
     padding-left: 25px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slide .contentslide {
+    padding-top: 125px;
+  }
+  .slide .contentslide h2 {
+    padding-bottom: 45px;
   }
 }
 
