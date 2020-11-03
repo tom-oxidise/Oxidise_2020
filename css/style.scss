@@ -391,6 +391,83 @@ span {
     }
   }
 
+  @media screen and (max-width: 1200px) {
+      .roundbutton1 {
+        position: fixed;
+        z-index: 11;
+        display: none;
+        left: 25px;
+        top: 75%;
+        height: 147px;
+        opacity: 1;
+      }
+      .roundbutton1 .active {
+        display: flex;
+      }
+      .roundbutton2 {
+        position: fixed;
+        z-index: 11;
+        display: none;
+        left: 25px;
+        top: 75%;
+        height: 147px;
+        opacity: 1;
+      }
+      .roundbutton2 .active {
+        display: flex;
+      }
+      .roundbutton3 {
+        position: fixed;
+        z-index: 11;
+        display: none;
+        left: 25px;
+        top: 75%;
+        height: 147px;
+        opacity: 1;
+      }
+      .roundbutton3 .active {
+        display: flex;
+      }
+      .roundbutton4 {
+        position: fixed;
+        z-index: 11;
+        display: none;
+        left: 25px;
+        top: 75%;
+        height: 147px;
+        opacity: 1;
+      }
+      .roundbutton4 .active {
+        display: flex;
+      }
+      
+      .round-button-circle {
+        width: 250px;
+        height: 45px;
+        border-radius: 0%;
+        display: flex;
+        border:1px solid #ffffff;
+        cursor: pointer;
+        box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+        justify-content: center;
+        align-items: center;
+    }
+    .round-button-circle a {
+        font-size: 0.875rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        display: flex;
+        float: left;
+        width: 100%;
+        padding-top: 0%;
+        padding-bottom: 0%;
+        line-height: 1em;
+        text-align: center;
+        justify-content: center;
+    }
+      
+  }
+
   @import 'nav';
   @import 'navoverlay';
   @import 'slides';

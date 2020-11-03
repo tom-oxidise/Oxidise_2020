@@ -319,22 +319,6 @@
       }
 }
 
-@media screen and (max-width: 1200px) {
-    #missionCTA {
-        display: none;
-    }
-    #challengeCTA {
-        display: none;
-    }
-    #solutionsCTA {
-        display: none;
-    }
-    #aboutCTA{
-        display: none;
-    }
-    }
-
-
 @media screen and (max-width: 820px) {
     h1 {
         font-size: 2.375rem;
@@ -386,7 +370,7 @@
     }
     .contentslide p {
         padding-bottom: 10px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
 }

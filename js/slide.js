@@ -40,6 +40,12 @@
     $('#2').click(function() {
         $('#aboutCTA').removeClass('active');
     });
+    $('#mob2').click(function() {
+        $('#missionCTA').removeClass('active');
+    });
+    $('#mob2').click(function() {
+        $('#challengeCTA').addClass('active');
+    });
     //Challenges Toggle//
     
     $('#3').click(function() {
@@ -78,6 +84,12 @@
     $('#3').click(function() {
         $('#aboutCTA').removeClass('active');
     });
+    $('#mob3').click(function() {
+        $('#challengeCTA').removeClass('active');
+    });
+    $('#mob3').click(function() {
+        $('#solutionsCTA').addClass('active');
+    });
      //Services Toggle//
 
     $('#4').click(function() {
@@ -115,6 +127,12 @@
     });
     $('#4').click(function() {
         $('#aboutCTA').removeClass('active');
+    });
+    $('#mob4').click(function() {
+        $('#solutionsCTA').removeClass('active');
+    });
+    $('#mob4').click(function() {
+        $('#aboutCTA').addClass('active');
     });
 
     //About Toggle//
@@ -179,4 +197,10 @@
     });
     $('#mob5').click(function() {
         $('#slide5').removeClass('active');
+    });
+    $('#mob5').click(function() {
+        $('#aboutCTA').removeClass('active');
+    });
+    $('#mob5').click(function() {
+        $('#missionCTA').addClass('active');
     });
