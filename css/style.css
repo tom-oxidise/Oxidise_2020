@@ -1853,6 +1853,9 @@ nav span #burger:hover {
     width: 100%;
     height: 100%;
   }
+  .blurb p {
+    margin-bottom: 20px;
+  }
   .mission-right {
     width: 100%;
     height: 100%;
