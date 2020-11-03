@@ -902,6 +902,7 @@ nav span #burger:hover {
     font-size: 40px;
     top: 15px;
     right: 35px;
+    z-index: 999;
   }
   .overlay-content-left {
     padding-top: 125px;
