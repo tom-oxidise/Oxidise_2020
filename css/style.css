@@ -1431,6 +1431,12 @@ nav span #burger:hover {
   .slide .contentslide h2 {
     padding-bottom: 45px;
   }
+  .scrollMob {
+    top: 85%;
+  }
+  .contentslide p {
+    padding-bottom: 10px;
+  }
 }
 
 #heroslide {
@@ -1719,6 +1725,12 @@ nav span #burger:hover {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .scroll {
+    top: 80%;
   }
 }
 
