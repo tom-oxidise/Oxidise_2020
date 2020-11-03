@@ -1851,6 +1851,7 @@ nav span #burger:hover {
   }
   .mission-left {
     width: 100%;
+    height: 100%;
   }
   .mission-right {
     width: 100%;
@@ -1866,7 +1867,9 @@ nav span #burger:hover {
     padding-bottom: 25px;
   }
   .quote .button {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

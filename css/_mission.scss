@@ -97,6 +97,7 @@
     }
     .mission-left {
         width: 100%;
+        height: 100%;
     }
     .mission-right {
         width: 100%;
@@ -112,6 +113,6 @@
         padding-bottom: 25px;
     }
     .quote .button {
-        display: block;
+        display: flex;
     }
 }
