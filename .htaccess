@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^oxidise.co [NC]
+RewriteRule ^(.*)$ https://www.oxidise.co/$1 [L,R=301]
