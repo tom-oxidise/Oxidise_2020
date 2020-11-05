@@ -1539,6 +1539,13 @@ nav span #burger:hover {
   }
 }
 
+@media screen and (min-height: 1200px) {
+  .slide .contentslide {
+    padding-top: 475px;
+    padding-left: 250px;
+  }
+}
+
 #heroslide {
   display: -webkit-box;
   display: -ms-flexbox;
