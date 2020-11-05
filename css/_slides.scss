@@ -372,5 +372,10 @@
         padding-bottom: 10px;
         font-size: 1.4rem;
     }
+}
 
+@media screen and (min-height: 1000px) {
+    .slide .contentslide {
+        padding-top: 400px;
+    }
 }
