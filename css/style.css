@@ -1375,7 +1375,6 @@ nav span #burger:hover {
   position: fixed;
   width: 100%;
   top: 90%;
-  left: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1387,6 +1386,9 @@ nav span #burger:hover {
       -ms-flex-pack: center;
           justify-content: center;
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .scrollMob h2 {
@@ -1508,12 +1510,19 @@ nav span #burger:hover {
     opacity: 0;
   }
   .scrollMob {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #missionMobile.active {
     display: block;
     padding-left: 25px;
     cursor: pointer;
+  }
+  .scrollMob #arrowdown {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 

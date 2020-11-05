@@ -256,11 +256,11 @@
     position: fixed;
     width: 100%;
     top: 90%;
-    left: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     display: none;
+    align-items: center;
 }
 
 .scrollMob h2 {
@@ -349,12 +349,15 @@
         opacity: 0;
     }
     .scrollMob {
-        display: block;
+        display: flex;
     }
     #missionMobile.active {
         display: block;
         padding-left: 25px;
         cursor: pointer;
+    }
+    .scrollMob #arrowdown {
+        align-self: center;
     }
 }
 
